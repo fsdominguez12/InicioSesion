@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="434dp"
+        android:layout_height="806dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fotoinstituto" />
+
+    <TextView
+        android:id="@+id/pnlFondo"
+        android:layout_width="335dp"
+        android:layout_height="247dp"
+        android:background="@color/colorBlanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgFondo"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/imgFondo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="75dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/msjIngreso"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pnlFondo"
+        app:layout_constraintStart_toStartOf="@+id/pnlFondo"
+        app:layout_constraintTop_toTopOf="@+id/pnlFondo" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="271dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/msjIngreso2"
+        android:textColor="@color/colorNegro"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <ImageView
+        android:id="@+id/imgGoogle"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtMensaje"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/txtMensaje"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensaje"
+        app:srcCompat="@drawable/google" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="187dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAzul"
+        android:text="@string/txtIngresar"
+        android:textColor="@color/colorBlanco"
+        app:layout_constraintEnd_toEndOf="@+id/imgGoogle"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/imgGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/imgGoogle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

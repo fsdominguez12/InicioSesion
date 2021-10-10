@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InicioSesion</string>
+    <string name="default_web_client_id">150695185840-rehj8ndme7jrl0jv2cbfv9do5friecpk.apps.googleusercontent.com</string>
+    <string name="txtIngresar">Ingresar</string>
+    <string name="msjIngreso">INGRESO</string>
+    <string name="msjIngreso2">Para ingresar en este aplicativo necesitas ser mienbro de la comunidad educativa @tecazuay.edu.ec</string>
+
+</resources>
